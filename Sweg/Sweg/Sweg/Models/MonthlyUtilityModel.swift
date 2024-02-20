@@ -12,4 +12,11 @@ struct MonthlyUtilityModel: Identifiable {
     var year: Int
     var month: Int
     var utility: UtilityModel
+    
+    var yearString: String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .none
+        
+        return numberFormatter.string(from: NSNumber(value: year )) ?? ""
+    }
 }
