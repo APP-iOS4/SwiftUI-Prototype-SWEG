@@ -11,7 +11,9 @@ struct PaymentView: View {
     @State private var selectedBank: BankType = .nh
     @State private var bankAccountNumber: String = ""
     
-    @State private var isShowSheet: Bool = false
+    @State private var isShowingChangeAccountSheet: Bool = false
+    @State private var isShowingPaymentCompletedView: Bool = false
+    @State private var isShowingCheckingAlert: Bool = false
     
     var body: some View {
         Form {
@@ -58,49 +60,79 @@ struct PaymentView: View {
             }
             
             Section {
-                Button {
-                    isShowSheet.toggle()
-                } label: {
-                    Text("테스트")
-                }
-                .sheet(isPresented: $isShowSheet) {
-                    ChangePaymentView()
-                }
-                
                 HStack {
                     Text("예금주명")
                     Spacer()
                     Text("김마루")
                 }
-                Picker("은행명", selection: $selectedBank) {
-                    Text("농협").tag(BankType.nh)
-                    Text("신한").tag(BankType.shinhan)
-                    Text("토스").tag(BankType.toss)
+                
+                HStack {
+                    Text("은행명")
+                    Spacer()
+                    Text("신한은행")
                 }
-                .tint(.primary)
+                
                 HStack {
                     Text("계좌번호")
                     Spacer()
-                    TextField("숫자만 입력", text: $bankAccountNumber)
-                        .multilineTextAlignment(.trailing)
-                        .textFieldStyle(.plain)
-                        .keyboardType(.decimalPad)
-                        .onAppear {
-                            UITextField.appearance().clearButtonMode = .whileEditing
-                        }
+                    Text("110115489445")
+                }
+                
+                HStack {
+                    Spacer()
+                    Button {
+                        isShowingChangeAccountSheet.toggle()
+                    } label: {
+                        Text("납부정보 변경")
+                    }
+                    .sheet(isPresented: $isShowingChangeAccountSheet) {
+                        ChangePaymentView()
+                    }
+                    Spacer()
                 }
             }
             
             Section {
-                HStack {
-                    Text("예금주명")
-                    Text("김마루")
-                }
+                Button(action: {
+                    isShowingCheckingAlert.toggle()
+                    print("요금이 납부되었습니다.")
+                }, label: {
+                    HStack {
+                        Spacer()
+                        Text("납부하기")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                        Spacer()
+                    }
+                })
+                .listRowBackground(Color.accent)
             }
+        }
+        .alert("납부하시겠습니까?", isPresented: $isShowingCheckingAlert) {
+            Button("납부") {
+                isShowingPaymentCompletedView = true
+            }
+            Button("취소", role: .cancel) {
+                
+            }
+        } message: {
+            Text("""
+            
+            예금주: 김마루
+            은행명: 신한은행
+            계좌번호: 110115489445
+            """)
+        }
+        .navigationDestination(isPresented: $isShowingPaymentCompletedView) {
+            Text("납부가 완료되었습니다.")
+            Text("(화면 좀 더 꾸미고, 홈으로 돌아가야 함!)")
         }
     }
 }
 
 #Preview {
-    PaymentView()
+    NavigationStack {
+        PaymentView()
+    }
 }
