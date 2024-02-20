@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PaymentView: View {
-    @State private var selectedBank: BankType = .nonghyup
+    @State private var selectedBank: BankType = .nh
     @State private var bankAccountNumber: String = ""
     
     var body: some View {
@@ -62,7 +62,7 @@ struct PaymentView: View {
                     Text("김마루")
                 }
                 Picker("은행명", selection: $selectedBank) {
-                    Text("농협").tag(BankType.nonghyup)
+                    Text("농협").tag(BankType.nh)
                     Text("신한").tag(BankType.shinhan)
                     Text("토스").tag(BankType.toss)
                 }
