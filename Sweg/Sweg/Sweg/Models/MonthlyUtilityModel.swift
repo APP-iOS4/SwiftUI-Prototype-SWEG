@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct MonthlyUtilityModel: Identifiable {
     var id = UUID()
     var year: Int
@@ -20,3 +21,8 @@ struct MonthlyUtilityModel: Identifiable {
         return numberFormatter.string(from: NSNumber(value: year )) ?? ""
     }
 }
+
+
+
+
+

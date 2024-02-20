@@ -12,6 +12,11 @@ import Observation
 class MonthlyUtilityStore {
     var monthlyUtilities: [MonthlyUtilityModel] = []
     
+    //순위 작은순부터
+    var monthlyTotalSorted: [MonthlyUtilityModel] {
+         return monthlyUtilities.sorted { $0.utility.total < $1.utility.total }
+     }
+    
     init() {
         monthlyUtilities = [
             .init(year: 2023, month: 10, utility: UtilityModel(water: 12000, electricity: 8900, gas: 6000)),

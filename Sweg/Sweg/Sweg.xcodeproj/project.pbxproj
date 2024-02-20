@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A227C62B842A05006D0D9E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227C52B842A05006D0D9E /* ChartView.swift */; };
+		35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D12B844ABA006D0D9E /* CourselView.swift */; };
+		35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D62B8462B8006D0D9E /* RankingView.swift */; };
+		35A227D92B846B14006D0D9E /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */; };
+		35A227DF2B848460006D0D9E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* TestView.swift */; };
 		424C541C2B8428EC00A98ACF /* InquiryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541B2B8428EC00A98ACF /* InquiryView.swift */; };
 		424C541E2B842C5E00A98ACF /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541D2B842C5E00A98ACF /* MonthlyUtilityStore.swift */; };
 		424C54202B84453400A98ACF /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541F2B84453400A98ACF /* PaymentView.swift */; };
@@ -31,6 +36,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35A227C52B842A05006D0D9E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		35A227D12B844ABA006D0D9E /* CourselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourselView.swift; sourceTree = "<group>"; };
+		35A227D62B8462B8006D0D9E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyUtilityStore.swift; sourceTree = "<group>"; };
+		35A227DE2B848460006D0D9E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		424C541B2B8428EC00A98ACF /* InquiryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryView.swift; sourceTree = "<group>"; };
 		424C541D2B842C5E00A98ACF /* MonthlyUtilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyUtilityStore.swift; sourceTree = "<group>"; };
 		424C541F2B84453400A98ACF /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
@@ -105,6 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				DFF9DB9C2B8425F500F0622E /* ContentView.swift */,
+				35A227DE2B848460006D0D9E /* TestView.swift */,
+				35A227C52B842A05006D0D9E /* ChartView.swift */,
+				35A227D12B844ABA006D0D9E /* CourselView.swift */,
+				35A227D62B8462B8006D0D9E /* RankingView.swift */,
 				424C541B2B8428EC00A98ACF /* InquiryView.swift */,
 				424C541F2B84453400A98ACF /* PaymentView.swift */,
 				DFF9DBBA2B84298800F0622E /* Settings */,
@@ -120,7 +134,7 @@
 				DFF9DBAE2B8426C000F0622E /* MonthlyUtilityModel.swift */,
 				DFF9DBB02B8426DA00F0622E /* BoardModel.swift */,
 				DFF9DBB22B8426F700F0622E /* UserInfoModel.swift */,
-				424C541D2B842C5E00A98ACF /* MonthlyUtilityStore.swift */,
+				35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */,
 				DFF9DBC62B84461900F0622E /* Setting */,
 			);
 			path = Models;
@@ -244,6 +258,11 @@
 				DFF9DBCC2B84645E00F0622E /* PasswordSettingView.swift in Sources */,
 				DFF9DBC92B84462C00F0622E /* ToggleSettingType.swift in Sources */,
 				DFF9DBAD2B84269800F0622E /* UtilityModel.swift in Sources */,
+				35A227DF2B848460006D0D9E /* TestView.swift in Sources */,
+				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
+				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
+				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
+				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 				DFF9DBCA2B845BA900F0622E /* SettingMenuType.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				DFF9DBBE2B84322400F0622E /* SettingButtonView.swift in Sources */,
