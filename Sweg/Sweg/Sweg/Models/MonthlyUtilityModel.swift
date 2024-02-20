@@ -7,9 +7,16 @@
 
 import Foundation
 
+
 struct MonthlyUtilityModel: Identifiable {
     var id = UUID()
     var year: Int
     var month: Int
     var utility: UtilityModel
+    
 }
+
+
+
+
+

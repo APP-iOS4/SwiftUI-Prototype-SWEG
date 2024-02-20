@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35A227C62B842A05006D0D9E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227C52B842A05006D0D9E /* ChartView.swift */; };
+		35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D12B844ABA006D0D9E /* CourselView.swift */; };
+		35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D62B8462B8006D0D9E /* RankingView.swift */; };
+		35A227D92B846B14006D0D9E /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */; };
+		35A227DF2B848460006D0D9E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* TestView.swift */; };
 		DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9A2B8425F500F0622E /* SwegApp.swift */; };
 		DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9C2B8425F500F0622E /* ContentView.swift */; };
 		DFF9DB9F2B8425F700F0622E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF9DB9E2B8425F700F0622E /* Assets.xcassets */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35A227C52B842A05006D0D9E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		35A227D12B844ABA006D0D9E /* CourselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourselView.swift; sourceTree = "<group>"; };
+		35A227D62B8462B8006D0D9E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
+		35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyUtilityStore.swift; sourceTree = "<group>"; };
+		35A227DE2B848460006D0D9E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		DFF9DB972B8425F500F0622E /* Sweg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF9DB9A2B8425F500F0622E /* SwegApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwegApp.swift; sourceTree = "<group>"; };
 		DFF9DB9C2B8425F500F0622E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				DFF9DB9C2B8425F500F0622E /* ContentView.swift */,
+				35A227DE2B848460006D0D9E /* TestView.swift */,
+				35A227C52B842A05006D0D9E /* ChartView.swift */,
+				35A227D12B844ABA006D0D9E /* CourselView.swift */,
+				35A227D62B8462B8006D0D9E /* RankingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 				DFF9DBAE2B8426C000F0622E /* MonthlyUtilityModel.swift */,
 				DFF9DBB02B8426DA00F0622E /* BoardModel.swift */,
 				DFF9DBB22B8426F700F0622E /* UserInfoModel.swift */,
+				35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,11 +193,16 @@
 			files = (
 				DFF9DBB12B8426DA00F0622E /* BoardModel.swift in Sources */,
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
+				35A227D92B846B14006D0D9E /* MonthlyUtilityStore.swift in Sources */,
 				DFF9DBAB2B84267F00F0622E /* BankType.swift in Sources */,
 				DFF9DBAF2B8426C000F0622E /* MonthlyUtilityModel.swift in Sources */,
 				DFF9DBB32B8426F700F0622E /* UserInfoModel.swift in Sources */,
 				DFF9DBAD2B84269800F0622E /* UtilityModel.swift in Sources */,
+				35A227DF2B848460006D0D9E /* TestView.swift in Sources */,
+				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
+				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
+				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
