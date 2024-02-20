@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465B4F662B845F4000CBAF51 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B4F652B845F4000CBAF51 /* Writing.swift */; };
+		4670EDA62B84369700296676 /* Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670EDA52B84369700296676 /* Tab3.swift */; };
 		35A227C62B842A05006D0D9E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227C52B842A05006D0D9E /* ChartView.swift */; };
 		35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D12B844ABA006D0D9E /* CourselView.swift */; };
 		35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D62B8462B8006D0D9E /* RankingView.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		465B4F652B845F4000CBAF51 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
+		4670EDA52B84369700296676 /* Tab3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3.swift; sourceTree = "<group>"; };
 		35A227C52B842A05006D0D9E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		35A227D12B844ABA006D0D9E /* CourselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourselView.swift; sourceTree = "<group>"; };
 		35A227D62B8462B8006D0D9E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				DFF9DB9C2B8425F500F0622E /* ContentView.swift */,
+				4670EDA52B84369700296676 /* Tab3.swift */,
+				465B4F652B845F4000CBAF51 /* Writing.swift */,
 				35A227DE2B848460006D0D9E /* TestView.swift */,
 				35A227C52B842A05006D0D9E /* ChartView.swift */,
 				35A227D12B844ABA006D0D9E /* CourselView.swift */,
@@ -251,6 +257,7 @@
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
 				DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */,
 				DFF9DBAB2B84267F00F0622E /* BankType.swift in Sources */,
+				465B4F662B845F4000CBAF51 /* Writing.swift in Sources */,
 				DFF9DBAF2B8426C000F0622E /* MonthlyUtilityModel.swift in Sources */,
 				DFF9DBCE2B84784500F0622E /* ChangePaymentView.swift in Sources */,
 				DFF9DBB32B8426F700F0622E /* UserInfoModel.swift in Sources */,
@@ -265,6 +272,7 @@
 				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 				DFF9DBCA2B845BA900F0622E /* SettingMenuType.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
+				4670EDA62B84369700296676 /* Tab3.swift in Sources */,
 				DFF9DBBE2B84322400F0622E /* SettingButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
