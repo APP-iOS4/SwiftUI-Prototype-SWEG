@@ -8,6 +8,7 @@
 import Foundation
 
 struct UtilityModel {
+
     var water: Int
     var electricity: Int
     var gas: Int
@@ -16,3 +17,6 @@ struct UtilityModel {
         return water + electricity + gas
     }
 }
+
+
+
