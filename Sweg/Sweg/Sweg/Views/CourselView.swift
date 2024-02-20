@@ -13,24 +13,38 @@ struct CourselView: View {
     
     @State private var currentPage = 0
     var body: some View {
-        VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
-                    ForEach(pageTest, id: \.self) { pageTest in
-                        Text(pageTest)
-                            .font(.title)
-                            .foregroundColor(.white)
-                            .frame(width: 350, height: 200)
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    }
-                }
-                .padding()
+        TabView {
+            ForEach(pageTest, id: \.self) { pageTest in
+                Text(pageTest)
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                    .padding()
             }
-            
-            PageControl(numberOfPages: pageTest.count, currentPage: $currentPage)
-                .padding()
         }
+        .frame(height: 300)
+        .tabViewStyle(.page)
+        
+//        VStack {
+//            ScrollView(.horizontal, showsIndicators: false) {
+//                HStack(spacing: 20) {
+//                    ForEach(pageTest, id: \.self) { pageTest in
+//                        Text(pageTest)
+//                            .font(.title)
+//                            .foregroundColor(.white)
+//                            .frame(width: 350, height: 200)
+//                            .background(Color.blue)
+//                            .cornerRadius(10)
+//                    }
+//                }
+//                .padding()
+//            }
+//            
+//            PageControl(numberOfPages: pageTest.count, currentPage: $currentPage)
+//                .padding()
+//        }
     }
 }
 

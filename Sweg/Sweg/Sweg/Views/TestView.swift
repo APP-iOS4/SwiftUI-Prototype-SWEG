@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        VStack {
+        ScrollView {
             ChartView()
             CourselView()
             RankingView()

@@ -11,6 +11,8 @@ struct PaymentView: View {
     @State private var selectedBank: BankType = .nh
     @State private var bankAccountNumber: String = ""
     
+    @State private var isShowSheet: Bool = false
+    
     var body: some View {
         Form {
             Section {
@@ -56,6 +58,15 @@ struct PaymentView: View {
             }
             
             Section {
+                Button {
+                    isShowSheet.toggle()
+                } label: {
+                    Text("테스트")
+                }
+                .sheet(isPresented: $isShowSheet) {
+                    ChangePaymentView()
+                }
+                
                 HStack {
                     Text("예금주명")
                     Spacer()

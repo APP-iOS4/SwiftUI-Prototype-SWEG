@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct InquiryView: View {
+    @Binding var selectedTabIndex: Int
+    
     var body: some View {
         NavigationStack {
+//            Button {
+//                selectedTabIndex = 4
+//            } label: {
+//                Text("234324234")
+//            }
             List {
                 Section {
                     ThisMonthUtilityView()
@@ -24,12 +31,19 @@ struct InquiryView: View {
                 }
             }
             .listSectionSpacing(25)
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("공과금 조회/납부")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                }
+            }
         }
     }
 }
 
 #Preview {
-    InquiryView()
+    InquiryView(selectedTabIndex: .constant(1))
 }
 
 struct ThisMonthUtilityView: View {

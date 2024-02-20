@@ -16,8 +16,6 @@ struct ChartView: View {
             Text("이번달 현황")
                 .font(.title)
                 .padding()
-
-            
         }
     }
 }

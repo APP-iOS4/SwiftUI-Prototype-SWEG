@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ChangePaymentView: View {
+    @Environment (\.dismiss) private var dismiss
+    
     private let gridItems = [GridItem(.flexible()), GridItem(.flexible())]
     
     @State private var selectedBank: BankType?
@@ -20,7 +22,7 @@ struct ChangePaymentView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Spacer()
                 Button {
-                    
+                    dismiss.callAsFunction()
                 } label: {
                     Image(systemName: "xmark")
                 }
