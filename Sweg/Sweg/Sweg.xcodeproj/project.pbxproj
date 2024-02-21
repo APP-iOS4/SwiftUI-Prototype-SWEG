@@ -34,6 +34,10 @@
 		DFF9DBCE2B84784500F0622E /* ChangePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */; };
 		DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */; };
 		DFF9DBD42B848D5900F0622E /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */; };
+		DFF9DBE32B85D98300F0622E /* BoardDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE22B85D98300F0622E /* BoardDummyData.swift */; };
+		DFF9DBE52B85DB3500F0622E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE42B85DB3400F0622E /* BoardView.swift */; };
+		DFF9DBE72B85DBCD00F0622E /* BoardListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */; };
+		DFF9DBEA2B85E2FA00F0622E /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +69,10 @@
 		DFF9DBCB2B84645E00F0622E /* PasswordSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingView.swift; sourceTree = "<group>"; };
 		DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePaymentView.swift; sourceTree = "<group>"; };
 		DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankButtonView.swift; sourceTree = "<group>"; };
+		DFF9DBE22B85D98300F0622E /* BoardDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDummyData.swift; sourceTree = "<group>"; };
+		DFF9DBE42B85DB3400F0622E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListItemView.swift; sourceTree = "<group>"; };
+		DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 		DFF9DB992B8425F500F0622E /* Sweg */ = {
 			isa = PBXGroup;
 			children = (
+				DFF9DBE12B85D96B00F0622E /* DummyData */,
 				DFF9DBB42B84270900F0622E /* Resources */,
 				DFF9DBA92B84265600F0622E /* Models */,
 				DFF9DBA82B84264800F0622E /* Views */,
@@ -127,6 +136,7 @@
 				424C541B2B8428EC00A98ACF /* InquiryView.swift */,
 				424C541F2B84453400A98ACF /* PaymentView.swift */,
 				DFF9DBBA2B84298800F0622E /* Settings */,
+				DFF9DBE82B85DBD700F0622E /* Board */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +192,24 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DFF9DBE12B85D96B00F0622E /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				DFF9DBE22B85D98300F0622E /* BoardDummyData.swift */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+		DFF9DBE82B85DBD700F0622E /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				DFF9DBE42B85DB3400F0622E /* BoardView.swift */,
+				DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */,
+				DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */,
+			);
+			path = Board;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +287,12 @@
 				DFF9DBBC2B8429A300F0622E /* ProfileInfoView.swift in Sources */,
 				DFF9DBC52B84456700F0622E /* SettingWithToggleView.swift in Sources */,
 				DFF9DBB82B84293C00F0622E /* MoreSettingsView.swift in Sources */,
+				DFF9DBE72B85DBCD00F0622E /* BoardListItemView.swift in Sources */,
 				DFF9DBB12B8426DA00F0622E /* BoardModel.swift in Sources */,
+				DFF9DBEA2B85E2FA00F0622E /* ArticleView.swift in Sources */,
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
 				DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */,
+				DFF9DBE32B85D98300F0622E /* BoardDummyData.swift in Sources */,
 				DFF9DBAB2B84267F00F0622E /* BankType.swift in Sources */,
 				465B4F662B845F4000CBAF51 /* Writing.swift in Sources */,
 				DFF9DBAF2B8426C000F0622E /* MonthlyUtilityModel.swift in Sources */,
@@ -274,6 +305,7 @@
 				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
+				DFF9DBE52B85DB3500F0622E /* BoardView.swift in Sources */,
 				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 				DFF9DBCA2B845BA900F0622E /* SettingMenuType.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
