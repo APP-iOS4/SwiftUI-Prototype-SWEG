@@ -20,13 +20,7 @@ struct SectionView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text("공과금 비교")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                }
-            }
+            .navigationTitle("공과금 비교")
         }
         
     }

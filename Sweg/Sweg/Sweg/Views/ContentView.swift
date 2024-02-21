@@ -23,7 +23,7 @@ struct ContentView: View {
                     Label("공과금 비교", systemImage: "chart.pie.fill")
                 }
                 .tag(2)
-            Tab3()
+            BoardView()
                 .tabItem {
                     Label("핵꿀팁 게시판", systemImage: "person.3.fill")
                 }

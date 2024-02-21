@@ -45,11 +45,13 @@ struct ChartView: View {
               
                     
                 }
+                
                 .chartForegroundStyleScale([
-                    "사용자 납부금": .accent, "세대 평균 납부금": .orange
+                    "사용자 납부금": .accent, "세대 평균 납부금": .green
                 ])
              
             }
+            .frame(height: 200)
         }
         .padding(20)
         
@@ -57,6 +59,7 @@ struct ChartView: View {
         VStack(alignment: .center) {
             // total
             Text("사용자님의 평균 납부 금액은 \(monthlyUtilityStore.chartData.reduce(0) { $0 + $1.amount })입니다.")
+                .frame(maxWidth: .infinity, alignment: .center)
 
         }
        

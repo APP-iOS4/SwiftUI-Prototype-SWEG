@@ -49,7 +49,7 @@ struct MoreSettingsView: View {
                             .background(.gray.opacity(0.2))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
-                    .foregroundStyle(.black)
+                    .foregroundStyle(.primary)
                     .padding(.top, 30)
                 }
                 .padding()

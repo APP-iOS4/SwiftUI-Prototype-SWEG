@@ -12,14 +12,14 @@
 		35A227C62B842A05006D0D9E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227C52B842A05006D0D9E /* ChartView.swift */; };
 		35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D12B844ABA006D0D9E /* CourselView.swift */; };
 		35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D62B8462B8006D0D9E /* RankingView.swift */; };
-		35A227DF2B848460006D0D9E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* TestView.swift */; };
+		35A227DF2B848460006D0D9E /* SecionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* SecionView.swift */; };
 		4244E1DE2B85BE9600018116 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244E1DD2B85BE9600018116 /* PaymentButtonView.swift */; };
 		4244E1E02B85D51B00018116 /* PaymentCompleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4244E1DF2B85D51B00018116 /* PaymentCompleteView.swift */; };
-		35A227DF2B848460006D0D9E /* SecionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* SecionView.swift */; };
 		424C541C2B8428EC00A98ACF /* InquiryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541B2B8428EC00A98ACF /* InquiryView.swift */; };
 		424C54202B84453400A98ACF /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541F2B84453400A98ACF /* PaymentView.swift */; };
 		465B4F662B845F4000CBAF51 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B4F652B845F4000CBAF51 /* Writing.swift */; };
 		4670EDA62B84369700296676 /* Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670EDA52B84369700296676 /* Tab3.swift */; };
+		DF1470782B85E76800971822 /* BoardDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1470772B85E76800971822 /* BoardDummyData.swift */; };
 		DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9A2B8425F500F0622E /* SwegApp.swift */; };
 		DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9C2B8425F500F0622E /* ContentView.swift */; };
 		DFF9DB9F2B8425F700F0622E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF9DB9E2B8425F700F0622E /* Assets.xcassets */; };
@@ -39,15 +39,14 @@
 		DFF9DBCE2B84784500F0622E /* ChangePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */; };
 		DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */; };
 		DFF9DBD42B848D5900F0622E /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */; };
-		DFF9DBE32B85D98300F0622E /* BoardDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE22B85D98300F0622E /* BoardDummyData.swift */; };
-		DFF9DBE52B85DB3500F0622E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE42B85DB3400F0622E /* BoardView.swift */; };
-		DFF9DBE72B85DBCD00F0622E /* BoardListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */; };
-		DFF9DBEA2B85E2FA00F0622E /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */; };
 		DFF9DBD72B85C2C200F0622E /* NoticeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBD62B85C2C200F0622E /* NoticeBoardView.swift */; };
 		DFF9DBDA2B85C32900F0622E /* SettingDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */; };
 		DFF9DBDC2B85C65C00F0622E /* NoticeBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDB2B85C65C00F0622E /* NoticeBoardItem.swift */; };
 		DFF9DBDE2B85CC7F00F0622E /* TermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDD2B85CC7F00F0622E /* TermView.swift */; };
 		DFF9DBE02B85CDD800F0622E /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */; };
+		DFF9DBE52B85DB3500F0622E /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE42B85DB3400F0622E /* BoardView.swift */; };
+		DFF9DBE72B85DBCD00F0622E /* BoardListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */; };
+		DFF9DBEA2B85E2FA00F0622E /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,14 +56,14 @@
 		35A227D12B844ABA006D0D9E /* CourselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourselView.swift; sourceTree = "<group>"; };
 		35A227D62B8462B8006D0D9E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyUtilityStore.swift; sourceTree = "<group>"; };
-		35A227DE2B848460006D0D9E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		35A227DE2B848460006D0D9E /* SecionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecionView.swift; sourceTree = "<group>"; };
 		4244E1DD2B85BE9600018116 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
 		4244E1DF2B85D51B00018116 /* PaymentCompleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCompleteView.swift; sourceTree = "<group>"; };
-		35A227DE2B848460006D0D9E /* SecionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecionView.swift; sourceTree = "<group>"; };
 		424C541B2B8428EC00A98ACF /* InquiryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryView.swift; sourceTree = "<group>"; };
 		424C541F2B84453400A98ACF /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		465B4F652B845F4000CBAF51 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
 		4670EDA52B84369700296676 /* Tab3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3.swift; sourceTree = "<group>"; };
+		DF1470772B85E76800971822 /* BoardDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDummyData.swift; sourceTree = "<group>"; };
 		DFF9DB972B8425F500F0622E /* Sweg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF9DB9A2B8425F500F0622E /* SwegApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwegApp.swift; sourceTree = "<group>"; };
 		DFF9DB9C2B8425F500F0622E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,15 +83,14 @@
 		DFF9DBCB2B84645E00F0622E /* PasswordSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingView.swift; sourceTree = "<group>"; };
 		DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePaymentView.swift; sourceTree = "<group>"; };
 		DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankButtonView.swift; sourceTree = "<group>"; };
-		DFF9DBE22B85D98300F0622E /* BoardDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDummyData.swift; sourceTree = "<group>"; };
-		DFF9DBE42B85DB3400F0622E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
-		DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListItemView.swift; sourceTree = "<group>"; };
-		DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 		DFF9DBD62B85C2C200F0622E /* NoticeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardView.swift; sourceTree = "<group>"; };
 		DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDummyData.swift; sourceTree = "<group>"; };
 		DFF9DBDB2B85C65C00F0622E /* NoticeBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardItem.swift; sourceTree = "<group>"; };
 		DFF9DBDD2B85CC7F00F0622E /* TermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermView.swift; sourceTree = "<group>"; };
 		DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
+		DFF9DBE42B85DB3400F0622E /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardListItemView.swift; sourceTree = "<group>"; };
+		DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */,
+				DF1470772B85E76800971822 /* BoardDummyData.swift */,
 			);
 			path = DummyData;
 			sourceTree = "<group>";
@@ -331,8 +330,8 @@
 				DFF9DBD72B85C2C200F0622E /* NoticeBoardView.swift in Sources */,
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
 				DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */,
-				DFF9DBE32B85D98300F0622E /* BoardDummyData.swift in Sources */,
 				DFF9DBAB2B84267F00F0622E /* BankType.swift in Sources */,
+				DF1470782B85E76800971822 /* BoardDummyData.swift in Sources */,
 				465B4F662B845F4000CBAF51 /* Writing.swift in Sources */,
 				4244E1E02B85D51B00018116 /* PaymentCompleteView.swift in Sources */,
 				DFF9DBAF2B8426C000F0622E /* MonthlyUtilityModel.swift in Sources */,
@@ -508,7 +507,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -542,7 +541,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

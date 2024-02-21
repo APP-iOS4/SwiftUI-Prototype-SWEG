@@ -11,11 +11,11 @@ struct RankingView: View {
     private var monthlyUtilityStore = MonthlyUtilityStore()
     
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 30) {
+        VStack(alignment: .leading, spacing: 30) {
             
-            Text("납부액 비교")
-                .font(.title2)
-                .fontWeight(.bold)
+//            Text("납부액 비교")
+//                .font(.title2)
+//                .fontWeight(.bold)
             
             //최소 납부 요금 기록
             VStack(alignment: .leading) {
