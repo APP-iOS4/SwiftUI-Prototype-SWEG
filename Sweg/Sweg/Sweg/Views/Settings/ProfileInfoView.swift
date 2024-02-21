@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ProfileInfoView: View {
+    @State private var isNavigationDestination: Bool = false
+    
     var body: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 20) {
             Image("profileImage")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -22,11 +24,17 @@ struct ProfileInfoView: View {
             Spacer()
             
             Button {
-                print("변경 버튼 눌림")
+                isNavigationDestination.toggle()
             } label: {
                 Text("변경")
             }
             .tint(.primary)
+        }
+        .padding(.horizontal)
+        .background(.gray.opacity(0.1))
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .navigationDestination(isPresented: $isNavigationDestination) {
+            ProfileSettingView()
         }
     }
 }

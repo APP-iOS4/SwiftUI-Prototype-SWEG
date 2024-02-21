@@ -12,35 +12,52 @@ struct SettingButtonView: View {
     var buttonType: SettingMenuType
     
     @State private var isNavigationDestination: Bool = false
+    @State private var isNavigationNoticeBoard: Bool = false
+    @State private var isNavigationTerm: Bool = false
     
     var body: some View {
-        HStack {
-            Button {
-                didTapButton()
-            } label: {
-                Text("\(buttonType.rawValue)")
-                    .font(.title3)
-            }
-            .tint(.primary)
-            
-            if buttonType == .version {
-                Text("v1.0.0")
-                    .font(.body)
-                
-                Spacer()
-                
+        VStack {
+            HStack {
                 Button {
-                    
+                    didTapButton()
                 } label: {
-                    Text("업데이트")
-                        .font(.body)
-                        .underline()
+                    Text("\(buttonType.rawValue)")
+                        .font(.title3)
+                    
+                    if buttonType == .version {
+                        Text("v1.0.0")
+                            .font(.body)
+                        
+                        Spacer()
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("업데이트")
+                                .font(.body)
+                                .underline()
+                        }
+                        .tint(.gray)
+                    } else {
+                        Spacer()
+                    }
                 }
-                .tint(.gray)
+                .tint(.primary)
             }
+            .padding(.vertical, 10)
+            
+            Rectangle()
+                .foregroundStyle(.gray.opacity(0.1))
+                .frame(maxWidth: .infinity, maxHeight: 1)
         }
         .navigationDestination(isPresented: $isNavigationDestination) {
             SettingWithToggleView(settingType: buttonType)
+        }
+        .navigationDestination(isPresented: $isNavigationNoticeBoard) {
+            NoticeBoardView()
+        }
+        .navigationDestination(isPresented: $isNavigationTerm) {
+            TermView(term: buttonType == .terms ? dummyTerms.first! : dummyTerms.last!)
         }
     }
     
@@ -49,19 +66,19 @@ struct SettingButtonView: View {
         case .pay, .notification, .lock:
             isNavigationDestination.toggle()
         case .terms:
-            break
+            isNavigationTerm.toggle()
         case .policy:
-            break
+            isNavigationTerm.toggle()
         case .version:
             break
         case .reset:
             break
         case .notice:
-            break
+            isNavigationNoticeBoard.toggle()
         }
     }
 }
 
 #Preview {
-    SettingButtonView(buttonType: .version)
+    SettingButtonView(buttonType: .notice)
 }

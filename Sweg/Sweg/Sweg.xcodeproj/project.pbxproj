@@ -34,6 +34,11 @@
 		DFF9DBCE2B84784500F0622E /* ChangePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */; };
 		DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */; };
 		DFF9DBD42B848D5900F0622E /* MonthlyUtilityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */; };
+		DFF9DBD72B85C2C200F0622E /* NoticeBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBD62B85C2C200F0622E /* NoticeBoardView.swift */; };
+		DFF9DBDA2B85C32900F0622E /* SettingDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */; };
+		DFF9DBDC2B85C65C00F0622E /* NoticeBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDB2B85C65C00F0622E /* NoticeBoardItem.swift */; };
+		DFF9DBDE2B85CC7F00F0622E /* TermView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDD2B85CC7F00F0622E /* TermView.swift */; };
+		DFF9DBE02B85CDD800F0622E /* ProfileSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,11 @@
 		DFF9DBCB2B84645E00F0622E /* PasswordSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSettingView.swift; sourceTree = "<group>"; };
 		DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePaymentView.swift; sourceTree = "<group>"; };
 		DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankButtonView.swift; sourceTree = "<group>"; };
+		DFF9DBD62B85C2C200F0622E /* NoticeBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardView.swift; sourceTree = "<group>"; };
+		DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingDummyData.swift; sourceTree = "<group>"; };
+		DFF9DBDB2B85C65C00F0622E /* NoticeBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBoardItem.swift; sourceTree = "<group>"; };
+		DFF9DBDD2B85CC7F00F0622E /* TermView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermView.swift; sourceTree = "<group>"; };
+		DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,7 @@
 		DFF9DB992B8425F500F0622E /* Sweg */ = {
 			isa = PBXGroup;
 			children = (
+				DFF9DBD82B85C31400F0622E /* DummyData */,
 				DFF9DBB42B84270900F0622E /* Resources */,
 				DFF9DBA92B84265600F0622E /* Models */,
 				DFF9DBA82B84264800F0622E /* Views */,
@@ -164,6 +175,10 @@
 				DFF9DBCB2B84645E00F0622E /* PasswordSettingView.swift */,
 				DFF9DBCD2B84784500F0622E /* ChangePaymentView.swift */,
 				DFF9DBCF2B847FE800F0622E /* BankButtonView.swift */,
+				DFF9DBD62B85C2C200F0622E /* NoticeBoardView.swift */,
+				DFF9DBDB2B85C65C00F0622E /* NoticeBoardItem.swift */,
+				DFF9DBDD2B85CC7F00F0622E /* TermView.swift */,
+				DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -182,6 +197,14 @@
 			children = (
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DFF9DBD82B85C31400F0622E /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				DFF9DBD92B85C32900F0622E /* SettingDummyData.swift */,
+			);
+			path = DummyData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,11 +278,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				424C541C2B8428EC00A98ACF /* InquiryView.swift in Sources */,
+				DFF9DBDC2B85C65C00F0622E /* NoticeBoardItem.swift in Sources */,
+				DFF9DBDE2B85CC7F00F0622E /* TermView.swift in Sources */,
 				424C54202B84453400A98ACF /* PaymentView.swift in Sources */,
 				DFF9DBBC2B8429A300F0622E /* ProfileInfoView.swift in Sources */,
 				DFF9DBC52B84456700F0622E /* SettingWithToggleView.swift in Sources */,
 				DFF9DBB82B84293C00F0622E /* MoreSettingsView.swift in Sources */,
 				DFF9DBB12B8426DA00F0622E /* BoardModel.swift in Sources */,
+				DFF9DBD72B85C2C200F0622E /* NoticeBoardView.swift in Sources */,
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
 				DFF9DBD02B847FE800F0622E /* BankButtonView.swift in Sources */,
 				DFF9DBAB2B84267F00F0622E /* BankType.swift in Sources */,
@@ -272,12 +298,14 @@
 				DFF9DBAD2B84269800F0622E /* UtilityModel.swift in Sources */,
 				35A227DF2B848460006D0D9E /* TestView.swift in Sources */,
 				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
+				DFF9DBE02B85CDD800F0622E /* ProfileSettingView.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
 				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 				DFF9DBCA2B845BA900F0622E /* SettingMenuType.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				4670EDA62B84369700296676 /* Tab3.swift in Sources */,
+				DFF9DBDA2B85C32900F0622E /* SettingDummyData.swift in Sources */,
 				DFF9DBD42B848D5900F0622E /* MonthlyUtilityStore.swift in Sources */,
 				DFF9DBBE2B84322400F0622E /* SettingButtonView.swift in Sources */,
 			);

@@ -65,6 +65,7 @@ struct PasswordSettingView: View {
             
         }
         .navigationTitle("비밀번호 변경")
+        .toolbar(.hidden, for: .tabBar)
         .onDisappear {
             if appPassword == "-1111" {
                 useAppLock = false
