@@ -12,13 +12,8 @@ struct InquiryView: View {
     
     var body: some View {
         NavigationStack {
-            //            Button {
-            //                selectedTabIndex = 4
-            //            } label: {
-            //                Text("234324234")
-            //            }
             List {
-                Section {
+                Section("이번 달 공과금") {
                     ThisMonthUtilityView()
                 }
                 
@@ -26,18 +21,43 @@ struct InquiryView: View {
                     YearOnYearView()
                 }
                 
-                Section {
+                Section("최근 3개월 공과금") {
                     LastThreeMonthlyUtiliesView()
                 }
-            }
-            .listSectionSpacing(25)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text("조회 및 납부")
-                        .font(.title3)
-                        .fontWeight(.bold)
+                
+                Section {
+                    VStack(alignment: .leading) {
+                        Text("다른 사람들의 가스비가 궁금해?")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                        Text("이웃의 평균 공과금을 알려드려요")
+                            .font(.subheadline)
+                            .padding(.top, -1)
+                        HStack {
+                            Spacer()
+                            Image(systemName: "building.2")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 50)
+                                .foregroundStyle(.accent)
+                                .padding(.top, -20)
+                                .padding(.trailing, 1)
+                        }
+                    }
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            selectedTabIndex = 2
+                        }, label: {
+                            Text("비교하러 가기")
+                        })
+                        .tint(.primary)
+                    }
                 }
             }
+            .navigationTitle("조회 및 납부")
+            .navigationBarTitleDisplayMode(.inline)
+            .listSectionSpacing(.compact)
         }
     }
 }
@@ -64,7 +84,8 @@ struct ThisMonthUtilityView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         HStack {
-                            Text("\(yearOfThisMonth)년 \(thisMonth)월 청구금액")
+                            Text("\(yearOfThisMonth)년 \(thisMonth)월")
+                                .fontWeight(.semibold)
                             Spacer()
                         }
                         Text("24. 2. 1 ~ 24. 2. 29")
@@ -85,22 +106,29 @@ struct ThisMonthUtilityView: View {
             Grid(verticalSpacing: 10) {
                 HStack {
                     Text("💧 수도 요금")
+                    Text("18㎥")
+                        .font(.caption)
                     Spacer()
                     Text("\(waterBill)원")
                 }
                 HStack {
                     Text("⚡️ 전기 요금")
+                    Text("93kWh")
+                        .font(.caption)
                     Spacer()
                     Text("\(electricityBill)원")
                 }
                 HStack {
                     Text("🔥 가스 요금")
+                    Text("15㎥")
+                        .font(.caption)
                     Spacer()
                     Text("\(gasBill)원")
                 }
             }
             .padding(.leading)
             .padding(.trailing)
+            .padding(.bottom)
         }
         
         HStack {
@@ -123,24 +151,35 @@ struct ThisMonthUtilityView: View {
                 Form {
                     Section {
                         NavigationLink {
-                            PaymentView()
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            Text("카카오페이로 납부하기")
+                            PaymentButtonView(imageString: "kakaopay", message: "카카오페이")
                         }
                         NavigationLink {
-                            PaymentView()
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            Text("나의 계좌에서 바로 납부하기")
+                            PaymentButtonView(imageString: "naverpay", message: "네이버페이")
                         }
                         NavigationLink {
-                            PaymentView()
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            Text("입금 전용계좌 문자 안내받기")
+                            PaymentButtonView(imageString: "payco", message: "페이코")
                         }
                         NavigationLink {
-                            PaymentView()
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            Text("기타 납부하기(카드, 포인트 등)")
+                            PaymentButtonView(imageString: "tosspay", message: "토스페이")
+                        }
+                        NavigationLink {
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
+                        } label: {
+                            Label("실시간 계좌이체", systemImage: "wonsign.square")
+                        }
+                        NavigationLink {
+                            PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
+                        } label: {
+                            Label("신용/체크카드 납부", systemImage: "creditcard")
+                            
                         }
                     }
                     
@@ -167,6 +206,7 @@ struct YearOnYearView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text("전년동월비")
+                        .fontWeight(.semibold)
                     Spacer()
                 }
                 Text("23. 2. 1 ~ 23. 2. 29")
@@ -175,10 +215,16 @@ struct YearOnYearView: View {
             HStack {
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("10.4% 증가했어요")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .padding(.top, 1)
+                    HStack(alignment: .lastTextBaseline) {
+                        Text("10.4% 증가")
+                            .font(.title2)
+                            .fontWeight(.bold)
+                            .padding(.top, 1)
+                            .foregroundStyle(.accent)
+                        Text("했어요")
+                            .padding(.leading, -5)
+                            .fontWeight(.bold)
+                    }
                     Text("37,450원")
                 }
             }
@@ -206,7 +252,8 @@ struct LastThreeMonthlyUtiliesView: View {
             VStack {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("\(yearOfLastMonth)년 \(lastMonth)월 청구금액")
+                        Text("\(yearOfLastMonth)년 \(lastMonth)월")
+                            .fontWeight(.semibold)
                         Spacer()
                     }
                     Text("24. 1. 1 ~ 24. 1. 31")
@@ -224,7 +271,8 @@ struct LastThreeMonthlyUtiliesView: View {
             VStack {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("\(yearOfTwoMonthsAgo)년 \(TwoMonthsAgo)월 청구금액")
+                        Text("\(yearOfTwoMonthsAgo)년 \(TwoMonthsAgo)월")
+                            .fontWeight(.semibold)
                         Spacer()
                     }
                     Text("23. 12. 1 ~ 23. 12. 31")
@@ -242,7 +290,8 @@ struct LastThreeMonthlyUtiliesView: View {
             VStack {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("\(yearOfThreeMonthsAgo)년 \(ThreeMonthsAgo)월 청구금액")
+                        Text("\(yearOfThreeMonthsAgo)년 \(ThreeMonthsAgo)월")
+                            .fontWeight(.semibold)
                         Spacer()
                     }
                     Text("23. 11. 1 ~ 23. 11. 30")
