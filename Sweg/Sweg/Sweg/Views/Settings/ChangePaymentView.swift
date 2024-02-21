@@ -43,6 +43,7 @@ struct ChangePaymentView: View {
             }
             
             TextField("계좌번호를 입력하세요", text: $bankAccountField)
+                .keyboardType(.decimalPad)
                 .font(.title2)
                 .padding()
                 .overlay {

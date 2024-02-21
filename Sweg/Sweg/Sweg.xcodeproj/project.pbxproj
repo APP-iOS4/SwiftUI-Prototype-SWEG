@@ -20,6 +20,11 @@
 		465B4F662B845F4000CBAF51 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B4F652B845F4000CBAF51 /* Writing.swift */; };
 		4670EDA62B84369700296676 /* Tab3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670EDA52B84369700296676 /* Tab3.swift */; };
 		DF1470782B85E76800971822 /* BoardDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1470772B85E76800971822 /* BoardDummyData.swift */; };
+		DFE3BFB92B8610750021EBB2 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFB82B8610750021EBB2 /* CommentView.swift */; };
+		DFE3BFBB2B86131C0021EBB2 /* CommentListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFBA2B86131C0021EBB2 /* CommentListItemView.swift */; };
+		DFE3BFBD2B8617610021EBB2 /* InputCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFBC2B8617610021EBB2 /* InputCommentView.swift */; };
+		DFE3BFBF2B8632C50021EBB2 /* WriteArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFBE2B8632C50021EBB2 /* WriteArticleView.swift */; };
+		DFE3BFC12B8642D80021EBB2 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE3BFC02B8642D80021EBB2 /* AdView.swift */; };
 		DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9A2B8425F500F0622E /* SwegApp.swift */; };
 		DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF9DB9C2B8425F500F0622E /* ContentView.swift */; };
 		DFF9DB9F2B8425F700F0622E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFF9DB9E2B8425F700F0622E /* Assets.xcassets */; };
@@ -64,6 +69,11 @@
 		465B4F652B845F4000CBAF51 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
 		4670EDA52B84369700296676 /* Tab3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3.swift; sourceTree = "<group>"; };
 		DF1470772B85E76800971822 /* BoardDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardDummyData.swift; sourceTree = "<group>"; };
+		DFE3BFB82B8610750021EBB2 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		DFE3BFBA2B86131C0021EBB2 /* CommentListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListItemView.swift; sourceTree = "<group>"; };
+		DFE3BFBC2B8617610021EBB2 /* InputCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCommentView.swift; sourceTree = "<group>"; };
+		DFE3BFBE2B8632C50021EBB2 /* WriteArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteArticleView.swift; sourceTree = "<group>"; };
+		DFE3BFC02B8642D80021EBB2 /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
 		DFF9DB972B8425F500F0622E /* Sweg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF9DB9A2B8425F500F0622E /* SwegApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwegApp.swift; sourceTree = "<group>"; };
 		DFF9DB9C2B8425F500F0622E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -243,6 +253,11 @@
 				DFF9DBE42B85DB3400F0622E /* BoardView.swift */,
 				DFF9DBE62B85DBCD00F0622E /* BoardListItemView.swift */,
 				DFF9DBE92B85E2FA00F0622E /* ArticleView.swift */,
+				DFE3BFB82B8610750021EBB2 /* CommentView.swift */,
+				DFE3BFBA2B86131C0021EBB2 /* CommentListItemView.swift */,
+				DFE3BFBC2B8617610021EBB2 /* InputCommentView.swift */,
+				DFE3BFBE2B8632C50021EBB2 /* WriteArticleView.swift */,
+				DFE3BFC02B8642D80021EBB2 /* AdView.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -326,6 +341,7 @@
 				DFF9DBB82B84293C00F0622E /* MoreSettingsView.swift in Sources */,
 				DFF9DBE72B85DBCD00F0622E /* BoardListItemView.swift in Sources */,
 				DFF9DBB12B8426DA00F0622E /* BoardModel.swift in Sources */,
+				DFE3BFBF2B8632C50021EBB2 /* WriteArticleView.swift in Sources */,
 				DFF9DBEA2B85E2FA00F0622E /* ArticleView.swift in Sources */,
 				DFF9DBD72B85C2C200F0622E /* NoticeBoardView.swift in Sources */,
 				DFF9DB9D2B8425F500F0622E /* ContentView.swift in Sources */,
@@ -335,6 +351,8 @@
 				465B4F662B845F4000CBAF51 /* Writing.swift in Sources */,
 				4244E1E02B85D51B00018116 /* PaymentCompleteView.swift in Sources */,
 				DFF9DBAF2B8426C000F0622E /* MonthlyUtilityModel.swift in Sources */,
+				DFE3BFBB2B86131C0021EBB2 /* CommentListItemView.swift in Sources */,
+				DFE3BFB92B8610750021EBB2 /* CommentView.swift in Sources */,
 				DFF9DBCE2B84784500F0622E /* ChangePaymentView.swift in Sources */,
 				DFF9DBB32B8426F700F0622E /* UserInfoModel.swift in Sources */,
 				4244E1DE2B85BE9600018116 /* PaymentButtonView.swift in Sources */,
@@ -342,8 +360,10 @@
 				DFF9DBC92B84462C00F0622E /* ToggleSettingType.swift in Sources */,
 				DFF9DBAD2B84269800F0622E /* UtilityModel.swift in Sources */,
 				35A227DF2B848460006D0D9E /* SecionView.swift in Sources */,
+				DFE3BFBD2B8617610021EBB2 /* InputCommentView.swift in Sources */,
 				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
 				DFF9DBE02B85CDD800F0622E /* ProfileSettingView.swift in Sources */,
+				DFE3BFC12B8642D80021EBB2 /* AdView.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
 				353E63882B85C87D001A7F1F /* ChartModel.swift in Sources */,

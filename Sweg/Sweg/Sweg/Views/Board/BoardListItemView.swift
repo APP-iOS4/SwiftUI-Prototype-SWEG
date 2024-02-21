@@ -28,18 +28,22 @@ struct BoardListItemView: View {
                 
                 HStack(spacing: 5) {
                     Text("\(article.nickname)")
-                    
                     Text("\u{00B7}")
-                    
                     Text("\(article.dateString)")
-
                     
                     Spacer()
                     
-                    Label("\(article.hits)", systemImage: "eyes")
+                    HStack(spacing: 5) {
+                        Image(systemName: "eyes")
+                        Text("\(article.hits)")
+                    }
                     
-                    Label("\(article.comments)", systemImage: "bubble")
-                        .foregroundStyle(.accent)
+                    HStack(spacing: 5) {
+                        Image(systemName: "bubble")
+                        Text("\(article.comments)")
+                    }
+                    .foregroundStyle(.accent)
+                    .padding(.leading, 10)
                 }
                 .font(.caption)
                 .foregroundStyle(.gray)
