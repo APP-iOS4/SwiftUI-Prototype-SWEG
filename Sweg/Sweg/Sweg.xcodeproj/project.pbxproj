@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353E63842B8595BF001A7F1F /* UtilityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E63832B8595BF001A7F1F /* UtilityType.swift */; };
+		353E63882B85C87D001A7F1F /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353E63872B85C87D001A7F1F /* ChartModel.swift */; };
 		35A227C62B842A05006D0D9E /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227C52B842A05006D0D9E /* ChartView.swift */; };
 		35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D12B844ABA006D0D9E /* CourselView.swift */; };
 		35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227D62B8462B8006D0D9E /* RankingView.swift */; };
-		35A227DF2B848460006D0D9E /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* TestView.swift */; };
+		35A227DF2B848460006D0D9E /* SecionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A227DE2B848460006D0D9E /* SecionView.swift */; };
 		424C541C2B8428EC00A98ACF /* InquiryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541B2B8428EC00A98ACF /* InquiryView.swift */; };
 		424C54202B84453400A98ACF /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C541F2B84453400A98ACF /* PaymentView.swift */; };
 		465B4F662B845F4000CBAF51 /* Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B4F652B845F4000CBAF51 /* Writing.swift */; };
@@ -46,11 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		353E63832B8595BF001A7F1F /* UtilityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityType.swift; sourceTree = "<group>"; };
+		353E63872B85C87D001A7F1F /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 		35A227C52B842A05006D0D9E /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		35A227D12B844ABA006D0D9E /* CourselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourselView.swift; sourceTree = "<group>"; };
 		35A227D62B8462B8006D0D9E /* RankingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingView.swift; sourceTree = "<group>"; };
 		35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyUtilityStore.swift; sourceTree = "<group>"; };
-		35A227DE2B848460006D0D9E /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		35A227DE2B848460006D0D9E /* SecionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecionView.swift; sourceTree = "<group>"; };
 		424C541B2B8428EC00A98ACF /* InquiryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryView.swift; sourceTree = "<group>"; };
 		424C541F2B84453400A98ACF /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		465B4F652B845F4000CBAF51 /* Writing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Writing.swift; sourceTree = "<group>"; };
@@ -96,6 +100,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		353E63812B8594F6001A7F1F /* Comparison Viewparison */ = {
+			isa = PBXGroup;
+			children = (
+				35A227DE2B848460006D0D9E /* SecionView.swift */,
+				35A227C52B842A05006D0D9E /* ChartView.swift */,
+				35A227D12B844ABA006D0D9E /* CourselView.swift */,
+				35A227D62B8462B8006D0D9E /* RankingView.swift */,
+			);
+			path = "Comparison Viewparison";
+			sourceTree = "<group>";
+		};
 		DFF9DB8E2B8425F500F0622E = {
 			isa = PBXGroup;
 			children = (
@@ -139,10 +154,7 @@
 				DFF9DB9C2B8425F500F0622E /* ContentView.swift */,
 				4670EDA52B84369700296676 /* Tab3.swift */,
 				465B4F652B845F4000CBAF51 /* Writing.swift */,
-				35A227DE2B848460006D0D9E /* TestView.swift */,
-				35A227C52B842A05006D0D9E /* ChartView.swift */,
-				35A227D12B844ABA006D0D9E /* CourselView.swift */,
-				35A227D62B8462B8006D0D9E /* RankingView.swift */,
+				353E63812B8594F6001A7F1F /* Comparison Viewparison */,
 				424C541B2B8428EC00A98ACF /* InquiryView.swift */,
 				424C541F2B84453400A98ACF /* PaymentView.swift */,
 				DFF9DBBA2B84298800F0622E /* Settings */,
@@ -155,11 +167,13 @@
 			isa = PBXGroup;
 			children = (
 				DFF9DBAA2B84267F00F0622E /* BankType.swift */,
+				353E63832B8595BF001A7F1F /* UtilityType.swift */,
 				DFF9DBAC2B84269800F0622E /* UtilityModel.swift */,
 				DFF9DBAE2B8426C000F0622E /* MonthlyUtilityModel.swift */,
 				DFF9DBB02B8426DA00F0622E /* BoardModel.swift */,
 				DFF9DBB22B8426F700F0622E /* UserInfoModel.swift */,
 				35A227D82B846B14006D0D9E /* MonthlyUtilityStore.swift */,
+				353E63872B85C87D001A7F1F /* ChartModel.swift */,
 				DFF9DBC62B84461900F0622E /* Setting */,
 			);
 			path = Models;
@@ -318,14 +332,16 @@
 				DFF9DBCC2B84645E00F0622E /* PasswordSettingView.swift in Sources */,
 				DFF9DBC92B84462C00F0622E /* ToggleSettingType.swift in Sources */,
 				DFF9DBAD2B84269800F0622E /* UtilityModel.swift in Sources */,
-				35A227DF2B848460006D0D9E /* TestView.swift in Sources */,
+				35A227DF2B848460006D0D9E /* SecionView.swift in Sources */,
 				35A227D22B844ABA006D0D9E /* CourselView.swift in Sources */,
 				DFF9DBE02B85CDD800F0622E /* ProfileSettingView.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				35A227C62B842A05006D0D9E /* ChartView.swift in Sources */,
+				353E63882B85C87D001A7F1F /* ChartModel.swift in Sources */,
 				DFF9DBE52B85DB3500F0622E /* BoardView.swift in Sources */,
 				35A227D72B8462B8006D0D9E /* RankingView.swift in Sources */,
 				DFF9DBCA2B845BA900F0622E /* SettingMenuType.swift in Sources */,
+				353E63842B8595BF001A7F1F /* UtilityType.swift in Sources */,
 				DFF9DB9B2B8425F500F0622E /* SwegApp.swift in Sources */,
 				4670EDA62B84369700296676 /* Tab3.swift in Sources */,
 				DFF9DBDA2B85C32900F0622E /* SettingDummyData.swift in Sources */,
