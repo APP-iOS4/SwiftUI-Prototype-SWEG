@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SwegApp: App {
+    @StateObject var board = BoardModel.init(content: String(), title: String(), date: Date(), hits: Int())
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(board)
         }
     }
 }
