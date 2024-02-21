@@ -11,66 +11,54 @@ struct MoreSettingsView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ProfileInfoView()
-                .listRowInsets(EdgeInsets())
-                
-                Section {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ProfileInfoView()
+                        .padding(.bottom, 20)
+                    
                     SettingButtonView(buttonType: .notice)
-                }
-                .listRowSeparator(.hidden)
-                .listSectionSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
-                
-                Section("설정") {
+                    
+                    Text("설정")
+                        .font(.body)
+                        .foregroundStyle(.gray)
+                        .padding(.top, 20)
                     SettingButtonView(buttonType: .pay)
                     SettingButtonView(buttonType: .notification)
                     SettingButtonView(buttonType: .lock)
-                }
-                .listRowSeparator(.hidden)
-                .listSectionSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
-                
-                Section("서비스 동의") {
+    
+                    Text("서비스 동의")
+                        .font(.body)
+                        .foregroundStyle(.gray)
+                        .padding(.top, 20)
                     SettingButtonView(buttonType: .terms)
                     SettingButtonView(buttonType: .policy)
-                }
-                .listRowSeparator(.hidden)
-                .listSectionSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
-                
-                Section("앱 정보") {
+                    
+                    Text("앱 정보")
+                        .font(.body)
+                        .foregroundStyle(.gray)
+                        .padding(.top, 20)
                     SettingButtonView(buttonType: .version)
                     SettingButtonView(buttonType: .reset)
-                }
-                .listRowSeparator(.hidden)
-                .listSectionSeparator(.hidden)
-                .listRowInsets(EdgeInsets())
-                .scrollContentBackground(.hidden)
-                
-                Button {
                     
-                } label: {
-                    Text("로그아웃")
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical)
-                        .background(.gray.opacity(0.2))
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                    Button {
+                        
+                    } label: {
+                        Text("로그아웃")
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical)
+                            .background(.gray.opacity(0.2))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                    }
+                    .foregroundStyle(.black)
+                    .padding(.top, 30)
                 }
-                .foregroundStyle(.black)
+                .padding()
+
             }
             .padding(.zero)
-            .background(.clear)
             .scrollContentBackground(.hidden)
-            
+            .navigationTitle("더보기")
             .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text("더보기")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                }
-            }
         }
     }
 }

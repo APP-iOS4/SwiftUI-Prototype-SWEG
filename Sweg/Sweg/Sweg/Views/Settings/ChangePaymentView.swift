@@ -52,7 +52,7 @@ struct ChangePaymentView: View {
                 .padding(.vertical)
             
             Button {
-                
+                dismiss.callAsFunction()
             } label: {
                 Text("확인")
                     .frame(maxWidth: .infinity, alignment: .center)
