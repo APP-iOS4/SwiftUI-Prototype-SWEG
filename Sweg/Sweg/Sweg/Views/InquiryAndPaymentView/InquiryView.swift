@@ -26,38 +26,16 @@ struct InquiryView: View {
                 }
                 
                 Section {
-                    VStack(alignment: .leading) {
-                        Text("다른 사람들의 가스비가 궁금해?")
-                            .font(.title3)
-                            .fontWeight(.bold)
-                        Text("이웃의 평균 공과금을 알려드려요")
-                            .font(.subheadline)
-                            .padding(.top, -1)
-                        HStack {
-                            Spacer()
-                            Image(systemName: "building.2")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 50)
-                                .foregroundStyle(.accent)
-                                .padding(.top, -20)
-                                .padding(.trailing, 1)
-                        }
-                    }
-                    HStack {
-                        Spacer()
-                        Button(action: {
-                            selectedTabIndex = 2
-                        }, label: {
-                            Text("비교하러 가기")
-                        })
-                        .tint(.primary)
-                    }
+                    SectionForChartView(selectedTabIndex: $selectedTabIndex)
+                }
+                
+                Section {
+                    SectionForBoardView(selectedTabIndex: $selectedTabIndex)
                 }
             }
             .navigationTitle("조회 및 납부")
             .navigationBarTitleDisplayMode(.inline)
-            .listSectionSpacing(.compact)
+            .listSectionSpacing(20)
         }
     }
 }
@@ -140,7 +118,6 @@ struct ThisMonthUtilityView: View {
                 Text("납부하기")
                     .font(.title3)
                     .fontWeight(.bold)
-                    .background(.accent)
                     .foregroundStyle(.white)
             })
             Spacer()
@@ -153,22 +130,22 @@ struct ThisMonthUtilityView: View {
                         NavigationLink {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            PaymentButtonView(imageString: "kakaopay", message: "카카오페이")
+                            PaymentWayButtonView(imageString: "kakaopay", message: "카카오페이")
                         }
                         NavigationLink {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            PaymentButtonView(imageString: "naverpay", message: "네이버페이")
+                            PaymentWayButtonView(imageString: "naverpay", message: "네이버페이")
                         }
                         NavigationLink {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            PaymentButtonView(imageString: "payco", message: "페이코")
+                            PaymentWayButtonView(imageString: "payco", message: "페이코")
                         }
                         NavigationLink {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
-                            PaymentButtonView(imageString: "tosspay", message: "토스페이")
+                            PaymentWayButtonView(imageString: "tosspay", message: "토스페이")
                         }
                         NavigationLink {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
