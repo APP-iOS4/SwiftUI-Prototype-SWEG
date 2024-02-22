@@ -15,7 +15,7 @@ struct ContentView: View {
         TabView(selection: $selectedIndex) {
             InquiryView(selectedTabIndex: $selectedIndex)
                 .tabItem {
-                    Label("조회/납부", systemImage: "wonsign.circle")
+                    Label("조회 및 납부", systemImage: "wonsign.circle")
                 }
                 .tag(1)
             SectionView()

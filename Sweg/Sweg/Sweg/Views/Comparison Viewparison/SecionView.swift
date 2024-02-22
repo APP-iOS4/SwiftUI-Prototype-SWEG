@@ -15,7 +15,7 @@ struct SectionView: View {
                     ChartView()
                 }
                 
-                Section("사용자 납부액 비교") {
+                Section("이제용님의 납부액 비교") {
                     RankingView()
                 }
             }

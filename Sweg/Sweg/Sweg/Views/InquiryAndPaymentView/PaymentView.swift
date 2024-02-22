@@ -73,7 +73,7 @@ struct PaymentView: View {
                 HStack {
                     Text("예금주명")
                     Spacer()
-                    Text("김마루")
+                    Text("이제용")
                         .fontWeight(.semibold)
                 }
                 
@@ -131,7 +131,7 @@ struct PaymentView: View {
         } message: {
             Text("""
             
-            예금주: 김마루
+            예금주: 이제용
             은행명: 신한은행
             계좌번호: 110115489445
             """)

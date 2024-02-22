@@ -18,7 +18,7 @@ struct ProfileInfoView: View {
                 .clipShape(Circle())
                 .frame(width: 80)
                 
-            Text("닉네임")
+            Text("이제용")
                 .font(.title2)
             
             Spacer()
