@@ -34,9 +34,9 @@ Saving Water💧, Electricity⚡️, Gas🔥
 
 | 조회 및 납부 기능 | 공과금 비교 기능 |
 | :---: | :---: |
-| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/2e976589-c887-4d46-ae6a-39eb6453779b" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/285f40a9-2aa9-41eb-88d7-e0db3afe4c5e" width="50%"></img> |
+| <img src="/previews/preview1.gif" width="50%"></img> | <img src="/previews/preview2.gif" width="50%"></img> |
 | **게시판 기능** | **여러 가지 설정** |
-| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/148ebe19-a44c-4e76-8196-500387d430b4" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/8494d745-3cdd-43e3-8af9-f7016508ae66" width="50%"></img> |
+| <img src="/previews/preview3.gif" width="50%"></img> | <img src="/previews/preview4.gif" width="50%"></img> |
 
 <br/><br/>
 
