@@ -1,3 +1,6 @@
+![LogoWide](https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/104145414/faa134ab-5fd5-4e0d-8101-8f47e8826ce2)
+
+
 # S￦EG
 Saving Water💧, Electricity⚡️, Gas🔥
 
@@ -19,11 +22,11 @@ Saving Water💧, Electricity⚡️, Gas🔥
 <br/>
 
 ### 개발 기간
-- 총 개발 기간 : 2024년 02월 19일 ~ 22일 (총 4일)
+- 총 개발 기간: 2024년 02월 19일 ~ 22일 (총 4일)
   
-- 기획 및 프로토타입 제작 : 1일
+- 기획 및 프로토타입 제작: 1일
   
-- 개발 및 피드백 : 3일
+- 개발 및 피드백: 3일
 
 <br/>
 
@@ -31,9 +34,9 @@ Saving Water💧, Electricity⚡️, Gas🔥
 
 | 조회 및 납부 기능 | 공과금 비교 기능 |
 | :---: | :---: |
-| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/2e976589-c887-4d46-ae6a-39eb6453779b" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/285f40a9-2aa9-41eb-88d7-e0db3afe4c5e" width="50%"></img> |
+| <img src="/previews/preview1.gif" width="50%"></img> | <img src="/previews/preview2.gif" width="50%"></img> |
 | **게시판 기능** | **여러 가지 설정** |
-| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/148ebe19-a44c-4e76-8196-500387d430b4" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/8494d745-3cdd-43e3-8af9-f7016508ae66" width="50%"></img> |
+| <img src="/previews/preview3.gif" width="50%"></img> | <img src="/previews/preview4.gif" width="50%"></img> |
 
 <br/><br/>
 
@@ -89,6 +92,64 @@ Saving Water💧, Electricity⚡️, Gas🔥
 |S₩EG 😎|일단 나부터 아끼자...|프라이드 사줘|TV부터 꺼야지|
 |<img src="https://avatars.githubusercontent.com/u/72730841?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/104145414?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/152136843?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/62321931?v=4" width="80%">|
 |[@marukim365](https://github.com/marukim365)|[@iosHumhae](https://github.com/marukim365)|[@simsoyung](https://github.com/simsoyung)|[@tv1039](https://github.com/tv1039)|
+
+<br/>
+
+### 프로젝트 회고
+
+**김성민**<br>
+
+SwiftUI로 진행한 첫 프로젝트. 확실하게 느낀 점은 UIKit 보다는 View를 구성하는 데 훨씬 수월했다.
+하지만 프로젝트 경험이 없다보니 만족스러운 부분보다는 아쉬웠던 점이 더 많았다.
+
+먼저 혼자하는 프로젝트가 아니다보니 앱의 분위기(강조색)나 코드 컨벤션에 있어서 통일성을 맞추는 것이 중요하다는 것을 느꼈다.
+처음부터 이런 부분을 맞추지 않았다면, 나중에 병합 작업 시에 꽤 손이 많이 들었을 것이다.
+이번 프로젝트에서는 처음에 강조색을 맞추고 시작했는데, 나중에 병합 작업 후 색상에 있어서 통일감이 느껴졌다.
+하지만 코드 부분에서는 코드 컨벤션을 논의하지 않고 시작하다보니 각자의 코드 스타일이 달라 통일감을 찾기 어려웠다.
+
+또, 재사용이 가능한 코드를 짜지 못했다는 점이 아쉬웠다.
+모든 View를 구현하고나서 코드를 쭉 살펴보니, 코드가 반복되는 부분이 많았다는 것을 깨달았다.
+그리고 '이런 View는 다른 곳에서 유사하게 사용할 수 있겠는데?' 라는 생각도 들었다.
+프로젝트를 마친 후에 코드를 리팩토링을 통해 재사용성 있고 깔끔한 코드로 수정해봐야겠다.
+
+아직은 개발이 처음이라 아쉬운 점이 많았지만, 이렇게 아쉬웠던 점을 회고하고 고쳐나가면서 조금 더 멋진 개발자로 성장할 수 있는 것 아닐까!? 😎
+
+
+<br>**박상현**<br>
+
+이번 프로토타이핑을 진행할떄는 개인적으로 뷰를 그리는 방법을 고심했습니다.
+플로팅버튼을 구현하면서 ZStack의 레이어 개념에 대해서 좀 더 알아갈 수 있었습니다.
+자동이체 변경, 비밀번호 키패드를 구현하면서 Grid에 대해 이해할 수 있었고,
+게시글 내의 하단 댓글 입력, 게시글 작성에서의 툴바를 구현하면서 SafeArea의 유동적인 변화를 이해할 수 있었습니다.
+
+ZStack, VStack, HStack 등을 어떤 계층으로 활용해야하는지 명확하게 알고있지는 못하지만, 생각한대로 뷰를 그릴 수 있었다는 점에서는 만족스러웠습니다.
+다만 어떻게 더 효율적으로(불필요한 스택을 사용하지 않는) 뷰를 그릴 수 있을지에 대해서는 좀 더 공부가 필요하다는 것을 느꼈습니다.
+
+팀원분들과의 화합도 좋았고, 기획 아이디어도 매우 흥미로워 전반적으로 만족스러운 실습이 되었습니다.
+
+
+<br>**홍승표**<br>
+
+첫 번째 SwiftUI 프로토타입 팀 프로젝트에 참여한 경험을 돌아보면,   
+UI 및 간단한 기능의 구현을 통해 앱의 기본적인 틀을 기획하고,
+팀원들의 다양하고 섬세한 피드백을 수렴하여 더 나은 사용자에게 친숙한 UI를 제공할 수 있게 되었습니다.
+협업 과정에서는 지속적인 피드백을 주고받음으로써 초기 기획보다 더 나은 완성도 있는 프로토타입을 구현할 수 있게 되었고
+팀원들 덕분에 GitHub와 SwiftUI 언어의 특성에 대한 이해도를 향상시킬 수 있었던 프로젝트 기간이었습니다.  
+
+그리고, 이번 프로젝트에서는 차트 모델을 처음 사용해 봤는데, 월별 데이터 모델을 만들고 차트를 통해 사용자에게 관리비 정보를 시각적으로 제공할 수 있는
+월별 데이터의 차트와 최대, 최소 비용 정보를 나타낼 수 있는 목록을 구현하여 사용자에게 다양한 시각적 정보를 제공할 수 있는 구현을 해보게 되었습니다.
+그러나 프로젝트를 진행하면서 개선이 필요한 부분도 발견했습니다.
+프로토타입 단계에서는 UI에 중점을 두어 데이터 모델을 개인 사용자 더미 데이터만 설계 후 구현하였습니다.
+
+추후에 실제 구현을 하게 된다면 개인 사용자 데이터와 전체 사용자 데이터를 관리할 수 있는 모델을 구현해야 할 필요성이 있다고 느꼈습니다.
+또한, 초기 기획에서는 포인트 컬러만을 통일시켰지만, 각자의 코딩 스타일이 달라 코드 부분에서는 일관성이 부족한 면이 있었습니다.
+이를 향후 프로젝트에서는 코드 컨벤션을 통일시키는 노력이 필요하다고 느꼈습니다.
+
+
+<br>**심소영**<br>
+
+She's comming!😆 
+
 
 <br/>
 

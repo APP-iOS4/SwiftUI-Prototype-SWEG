@@ -24,7 +24,7 @@ struct BoardView: View {
                             BoardListItemView(article: dummyArticles[i])
                         }
                     }
-                    .padding(.bottom, 80)
+                    .padding(.bottom, 70)
                     .navigationTitle("핵꿀팁 게시판")
                     .navigationBarTitleDisplayMode(.inline)
                 }
@@ -45,13 +45,14 @@ struct BoardView: View {
                         } label: {
                             HStack {
                                 Label("글쓰기", systemImage: "square.and.pencil")
-                                    .font(.title3)
+                                    .font(.body)
+                                    .fontWeight(.bold)
                                     .foregroundStyle(.white)
                             }
-                            .frame(height: 50)
+                            .frame(height: 40)
                             .padding(.horizontal)
                             .background(.accent)
-                            .clipShape(RoundedRectangle(cornerRadius: 25))
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
                             .shadow(radius: 10)
                         }
                     }
