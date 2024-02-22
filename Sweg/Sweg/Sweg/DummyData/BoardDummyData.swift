@@ -21,6 +21,15 @@ struct DummyArticleModel: Identifiable {
         dateFormatter.dateFormat = "yyyy/MM/dd"
         return dateFormatter.string(from: date)
     }
+    
+    var shareMemo: String {
+        return """
+                \(subject)
+                
+                지금 S₩EG에서 이웃들의 공과금 꿀팁을 확인해보세요!
+                https://www.naver.com/
+                """
+    }
 }
 
 let dummyArticles = [

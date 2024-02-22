@@ -17,6 +17,7 @@ struct InputCommentView: View {
                 
             } label: {
                 Image(systemName: "photo.badge.plus")
+                    .font(.title)
             }
             .tint(.gray)
             
@@ -33,7 +34,7 @@ struct InputCommentView: View {
             }
             .padding(10)
             .background(.gray.opacity(0.1))
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+            .clipShape(RoundedRectangle(cornerRadius: 15))
             
             Button {
                 isFocused = false
@@ -44,7 +45,7 @@ struct InputCommentView: View {
             .disabled(textField.count < 1)
         }
         .padding(10)
-        .background(.ultraThickMaterial)
+        .background(.ultraThinMaterial)
     }
 }
 

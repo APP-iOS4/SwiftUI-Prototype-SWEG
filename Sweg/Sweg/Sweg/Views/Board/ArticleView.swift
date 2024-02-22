@@ -54,12 +54,17 @@ struct ArticleView: View {
             .toolbar(.hidden, for: .tabBar)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
+                    HStack {
+                        ShareLink(item: article.shareMemo)
+                            .tint(.primary)
                         
-                    } label: {
-                        Label("신고하기", systemImage: "light.beacon.max")
+                        Button {
+                            
+                        } label: {
+                            Label("신고하기", systemImage: "light.beacon.max")
+                        }
+                        .tint(.red)
                     }
-                    .tint(.red)
                 }
             }
             
