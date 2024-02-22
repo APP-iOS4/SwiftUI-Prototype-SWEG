@@ -1,3 +1,6 @@
+![LogoWide](https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/104145414/faa134ab-5fd5-4e0d-8101-8f47e8826ce2)
+
+
 # S￦EG
 Saving Water💧, Electricity⚡️, Gas🔥
 
@@ -18,13 +21,22 @@ Saving Water💧, Electricity⚡️, Gas🔥
 
 <br/>
 
+### 개발 기간
+- 총 개발 기간 : 2024년 02월 19일 ~ 22일 (총 4일)
+  
+- 기획 및 프로토타입 제작 : 1일
+  
+- 개발 및 피드백 : 3일
+
+<br/>
+
 ### 구동 화면
 
 | 조회 및 납부 기능 | 공과금 비교 기능 |
 | :---: | :---: |
 | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/2e976589-c887-4d46-ae6a-39eb6453779b" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/285f40a9-2aa9-41eb-88d7-e0db3afe4c5e" width="50%"></img> |
-| 게시판 기능 | 여러 가지 설정 |
-| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/8494d745-3cdd-43e3-8af9-f7016508ae66" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/8494d745-3cdd-43e3-8af9-f7016508ae66" width="50%"></img> |
+| **게시판 기능** | **여러 가지 설정** |
+| <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/148ebe19-a44c-4e76-8196-500387d430b4" width="50%"></img> | <img src="https://github.com/APP-iOS4/SwiftUI-Prototype-SWEG/assets/72730841/8494d745-3cdd-43e3-8af9-f7016508ae66" width="50%"></img> |
 
 <br/><br/>
 
@@ -74,13 +86,12 @@ Saving Water💧, Electricity⚡️, Gas🔥
 
 ## 🔹 기타사항
 ### 팀원 소개
-- 🚗 김성민 [Github Link](https://github.com/marukim365) - S₩EG 😎
 
-- 💧 박상현 [Github Link](https://github.com/iosHumhae) - 한 마디
-
-- ⚡️ 심소영 [Github Link](https://github.com/simsoyung) - 한 마디
-
-- 🔥 홍승표 [Github Link](https://github.com/tv1039) - 한 마디
+|🚗<br>김성민|☕️<br>박상현|🍪<br>심소영|🎧<br>홍승표|
+|:---:|:---:|:---:|:---:|
+|S₩EG 😎|일단 나부터 아끼자...|프라이드 사줘|TV부터 꺼야지|
+|<img src="https://avatars.githubusercontent.com/u/72730841?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/104145414?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/152136843?v=4" width="80%">|<img src="https://avatars.githubusercontent.com/u/62321931?v=4" width="80%">|
+|[@marukim365](https://github.com/marukim365)|[@iosHumhae](https://github.com/marukim365)|[@simsoyung](https://github.com/simsoyung)|[@tv1039](https://github.com/tv1039)|
 
 <br/>
 
