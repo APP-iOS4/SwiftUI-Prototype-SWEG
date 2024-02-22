@@ -55,6 +55,7 @@ struct ThisMonthUtilityView: View {
     private var totalBill: Int { monthlyUtilityStore.monthlyUtilities.last?.utility.total ?? 0 }
     
     @State var isShowingPaymentWayView: Bool = false
+    @State var isShowingChangeAccountSheet: Bool = false
     
     var body: some View {
         VStack {
@@ -156,18 +157,51 @@ struct ThisMonthUtilityView: View {
                             PaymentView(isShowingPaymentWayView: $isShowingPaymentWayView)
                         } label: {
                             Label("신용/체크카드 납부", systemImage: "creditcard")
-                            
                         }
                     }
                     
-                    HStack {
-                        Spacer()
-                        Button(role: .cancel, action: {
-                            isShowingPaymentWayView.toggle()
-                        }, label: {
-                            Text("닫기")
-                        })
-                        Spacer()
+                    Section {
+                        VStack(alignment: .leading) {
+                            Text("매달 공과금 납부가 귀찮다면?")
+                                .font(.subheadline)
+                            Text("자동이체 등록으로 간단하게 납부!")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundStyle(.accent)
+//                            Image(systemName: "creditcard")
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width: 40)
+//                                .padding(.leading)
+                        }
+                        HStack {
+                            Spacer()
+                            Button(action: {
+                                isShowingChangeAccountSheet.toggle()
+                            }, label: {
+                                HStack {
+                                    Text("등록하러 가기")
+                                    Image(systemName: "chevron.right")
+                                }
+                            })
+                            .foregroundStyle(.primary)
+                        }
+                        .listRowSeparator(.hidden)
+                    }
+                    .sheet(isPresented: $isShowingChangeAccountSheet, content: {
+                        RegisterAccountView(isShowingPaymentWayView: $isShowingPaymentWayView)
+                    })
+                    
+                    Section {
+                        HStack {
+                            Spacer()
+                            Button(role: .cancel, action: {
+                                isShowingPaymentWayView.toggle()
+                            }, label: {
+                                Text("닫기")
+                            })
+                            Spacer()
+                        }
                     }
                 }
                 .navigationTitle("납부 방법 선택하기")
