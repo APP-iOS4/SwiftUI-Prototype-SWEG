@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PaymentButtonView: View {
+struct PaymentWayButtonView: View {
     var imageString: String
     var message: String
     
@@ -23,5 +23,5 @@ struct PaymentButtonView: View {
 }
 
 #Preview {
-    PaymentButtonView(imageString: "kakaopay", message: "카카오페이")
+    PaymentWayButtonView(imageString: "kakaopay", message: "카카오페이")
 }
