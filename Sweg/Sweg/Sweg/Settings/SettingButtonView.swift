@@ -57,7 +57,7 @@ struct SettingButtonView: View {
             NoticeBoardView()
         }
         .navigationDestination(isPresented: $isNavigationTerm) {
-            TermView(term: buttonType == .terms ? dummyTerms.first! : dummyTerms.last!)
+            TermView(isTerm: buttonType == .terms ? true : false)
         }
     }
     

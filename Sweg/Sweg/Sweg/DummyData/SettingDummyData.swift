@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Observation
 
 struct DummyNoticeModel: Identifiable {
     var id = UUID()
@@ -24,7 +25,6 @@ struct DummyTermModel {
     var title: String
     var content: String
 }
-
 
 
 let dummyNotice = [
