@@ -11,27 +11,32 @@ struct ProfileInfoView: View {
     @State private var isNavigationDestination: Bool = false
     
     var body: some View {
-        HStack(spacing: 20) {
-            Image("profileImage")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .clipShape(Circle())
-                .frame(width: 80)
+        VStack {
+            HStack(spacing: 20) {
+                Image("profileImage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
+                    .frame(width: 60)
                 
-            Text("이제용")
-                .font(.title2)
-            
-            Spacer()
+                Text("이제용")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                
+                Spacer()
+            }
             
             Button {
                 isNavigationDestination.toggle()
             } label: {
-                Text("변경")
+                Text("프로필 수정")
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.black)
+                    .frame(maxWidth: .infinity)
             }
-            .tint(.primary)
+            .buttonStyle(.borderedProminent)
+            .tint(.gray.opacity(0.2))
         }
-        .padding(.horizontal)
-        .background(.gray.opacity(0.1))
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .navigationDestination(isPresented: $isNavigationDestination) {
             ProfileSettingView()
