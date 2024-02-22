@@ -14,8 +14,12 @@ struct ChartView: View {
     var body: some View {
         
         VStack(alignment: .leading) {
-            Text("요금별 차트")
+            Text("요금별 평균 비용 차트")
                 .font(.title2)
+                .fontWeight(.bold)
+            Text("동일 평수 세대의 사용자 평균 비용 차트")
+                .font(.subheadline)
+                .foregroundStyle(.gray)
                 .fontWeight(.bold)
             
             VStack {
@@ -47,7 +51,7 @@ struct ChartView: View {
                 }
                 
                 .chartForegroundStyleScale([
-                    "사용자 납부금": .accent, "세대 평균 납부금": .green
+                    "이제용 님": .accent, "동일 평수 세대": .green
                 ])
              
             }
