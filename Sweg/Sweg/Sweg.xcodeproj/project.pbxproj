@@ -172,7 +172,6 @@
 				DFF9DBB42B84270900F0622E /* Resources */,
 				DFF9DBA92B84265600F0622E /* Models */,
 				DFF9DBA82B84264800F0622E /* Views */,
-				DFF9DBBA2B84298800F0622E /* Settings */,
 				DFF9DBA02B8425F700F0622E /* Preview Content */,
 			);
 			path = Sweg;
@@ -189,6 +188,7 @@
 		DFF9DBA82B84264800F0622E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DFF9DBBA2B84298800F0622E /* Settings */,
 				DFF9DB9C2B8425F500F0622E /* ContentView.swift */,
 				4670EDA52B84369700296676 /* Tab3.swift */,
 				465B4F652B845F4000CBAF51 /* Writing.swift */,
@@ -239,7 +239,8 @@
 				DFF9DBDD2B85CC7F00F0622E /* TermView.swift */,
 				DFF9DBDF2B85CDD800F0622E /* ProfileSettingView.swift */,
 			);
-			path = Settings;
+			name = Settings;
+			path = ../Settings;
 			sourceTree = "<group>";
 		};
 		DFF9DBC62B84461900F0622E /* Setting */ = {
