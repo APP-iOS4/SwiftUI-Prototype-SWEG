@@ -14,6 +14,24 @@ struct Tab3: View {
     
     var body: some View {
         ZStack {
+            VStack(alignment: .trailing) {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Image(systemName: "pencil")
+                        .foregroundStyle(.white)
+                        .frame(minWidth: 50, minHeight: 50)
+                        .background(.accent)
+                        .clipShape(Circle())
+                        .shadow(radius: 5)
+                }
+                .frame(minWidth: 50, minHeight: 50)
+                .onTapGesture {
+                    isNavigationDestination.toggle()
+                }
+            }
+            .padding()
+            
             NavigationStack {
                 List {
                     VStack(alignment:.leading) {
@@ -40,24 +58,6 @@ struct Tab3: View {
                     Writing()
                 }
             }
-            
-            VStack(alignment: .trailing) {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Image(systemName: "pencil")
-                        .foregroundStyle(.white)
-                        .frame(minWidth: 50, minHeight: 50)
-                        .background(.accent)
-                        .clipShape(Circle())
-                        .shadow(radius: 5)
-                }
-                .frame(minWidth: 50, minHeight: 50)
-                .onTapGesture {
-                    isNavigationDestination.toggle()
-                }
-            }
-            .padding()
             
         }
         //        NavigationView(content: {

@@ -15,15 +15,15 @@ struct ContentView: View {
         TabView(selection: $selectedIndex) {
             InquiryView(selectedTabIndex: $selectedIndex)
                 .tabItem {
-                    Label("조회/납부", systemImage: "wonsign.circle")
+                    Label("조회 및 납부", systemImage: "wonsign.circle")
                 }
                 .tag(1)
-            TestView()
+            SectionView()
                 .tabItem {
                     Label("공과금 비교", systemImage: "chart.pie.fill")
                 }
                 .tag(2)
-            Tab3()
+            BoardView()
                 .tabItem {
                     Label("핵꿀팁 게시판", systemImage: "person.3.fill")
                 }

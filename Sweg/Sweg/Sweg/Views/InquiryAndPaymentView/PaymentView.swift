@@ -15,13 +15,16 @@ struct PaymentView: View {
     @State private var isShowingPaymentCompletedView: Bool = false
     @State private var isShowingCheckingAlert: Bool = false
     
+    @Binding var isShowingPaymentWayView: Bool
+    
     var body: some View {
         Form {
             Section {
                 VStack {
                     VStack(alignment: .leading) {
                         HStack {
-                            Text("2024년 2월 청구금액")
+                            Text("2024년 2월")
+                                .fontWeight(.semibold)
                             Spacer()
                         }
                         Text("24. 2. 1 ~ 24. 2. 29")
@@ -40,22 +43,29 @@ struct PaymentView: View {
                     Grid(verticalSpacing: 10) {
                         HStack {
                             Text("💧 수도 요금")
+                            Text("18㎥")
+                                .font(.caption)
                             Spacer()
                             Text("20,200원")
                         }
                         HStack {
                             Text("⚡️ 전기 요금")
+                            Text("93kWh")
+                                .font(.caption)
                             Spacer()
                             Text("11,200원")
                         }
                         HStack {
                             Text("🔥 가스 요금")
+                            Text("15㎥")
+                                .font(.caption)
                             Spacer()
                             Text("9,960원")
                         }
                     }
                     .padding(.leading)
                     .padding(.trailing)
+                    .padding(.bottom)
                 }
             }
             
@@ -63,19 +73,22 @@ struct PaymentView: View {
                 HStack {
                     Text("예금주명")
                     Spacer()
-                    Text("김마루")
+                    Text("이제용")
+                        .fontWeight(.semibold)
                 }
                 
                 HStack {
                     Text("은행명")
                     Spacer()
                     Text("신한은행")
+                        .fontWeight(.semibold)
                 }
                 
                 HStack {
                     Text("계좌번호")
                     Spacer()
                     Text("110115489445")
+                        .fontWeight(.semibold)
                 }
                 
                 HStack {
@@ -95,7 +108,6 @@ struct PaymentView: View {
             Section {
                 Button(action: {
                     isShowingCheckingAlert.toggle()
-                    print("요금이 납부되었습니다.")
                 }, label: {
                     HStack {
                         Spacer()
@@ -119,20 +131,19 @@ struct PaymentView: View {
         } message: {
             Text("""
             
-            예금주: 김마루
+            예금주: 이제용
             은행명: 신한은행
             계좌번호: 110115489445
             """)
         }
         .navigationDestination(isPresented: $isShowingPaymentCompletedView) {
-            Text("납부가 완료되었습니다.")
-            Text("(화면 좀 더 꾸미고, 홈으로 돌아가야 함!)")
+            PaymentCompleteView(isShowingPaymentWayView: $isShowingPaymentWayView)
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        PaymentView()
+        PaymentView(isShowingPaymentWayView: .constant(false))
     }
 }
